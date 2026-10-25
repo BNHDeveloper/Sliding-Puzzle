@@ -7,7 +7,70 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Easy Code DZ home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>EASY CODE <b>DZ</b></span>
+      </a>
+      <span class="tagline">LEARN <i>•</i> BUILD <i>•</i> GROW</span>
+    </header>
+
+    <section class="game-layout" aria-labelledby="game-title">
+      <aside class="intro">
+        <p class="eyebrow">THE IMAGE CHALLENGE</p>
+        <h1 id="game-title">SLIDING <span>PUZZLE</span></h1>
+        <p class="subtitle">Put the picture back together before you run out of moves!</p>
+
+        <div class="how-to">
+          <h2><span class="bulb">✳</span> How to play</h2>
+          <ol>
+            <li><span>1</span> Tap a tile next to the empty space.</li>
+            <li><span>2</span> Move the picture pieces into the right order.</li>
+            <li><span>3</span> Rebuild the image to win!</li>
+          </ol>
+        </div>
+
+        <div class="preview-wrap">
+          <p class="preview-label">FULL IMAGE PREVIEW</p>
+          <img src="images/puzzle-image.png" alt="Complete red neon puzzle artwork preview" class="preview" />
+        </div>
+      </aside>
+
+      <section class="board-panel" aria-label="Sliding puzzle board">
+        <div class="board-heading">
+          <span>REBUILD THE IMAGE</span>
+          <span class="live-dot">● READY</span>
+        </div>
+        <div id="puzzle-board" class="puzzle-board" role="group" aria-label="4 by 4 sliding puzzle"></div>
+        <p id="message" class="message" aria-live="polite">Tap a tile beside the empty space to move it.</p>
+      </section>
+
+      <aside class="stats">
+        <div class="stat-card">
+          <span class="stat-icon">◷</span>
+          <p>TIME</p>
+          <strong id="timer">00:00</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon">↔</span>
+          <p>MOVES</p>
+          <strong id="moves">0</strong>
+        </div>
+        <button id="restart-btn" class="restart-btn" type="button"><span>⟳</span> Restart game</button>
+        <p class="tip">TIP: Use the preview to help you solve the image.</p>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <span class="tech html">5</span><span>HTML</span>
+      <span class="separator"></span>
+      <span class="tech css">✦</span><span>CSS</span>
+      <span class="separator"></span>
+      <span class="tech js">JS</span><span>JavaScript</span>
+      <span class="footer-brand">EASY CODE <b>DZ</b></span>
+    </footer>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
